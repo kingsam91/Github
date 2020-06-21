@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesComponent } from './pages/pages.component';
 import { PagesFormComponent } from './pages-form/pages-form.component';
+import { PagesReposComponent } from './pages-repos/pages-repos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagesComponent,
-    PagesFormComponent
+    PagesFormComponent,
+    PagesReposComponent
   ],
   imports: [
     BrowserModule,

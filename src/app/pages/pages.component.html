@@ -1,16 +1,19 @@
 <div class="container">
-    <button class="btn btn-secondary">Find</button>
-    <p>kingsam91</p>
-    <img src="https://via.placeholder.com/150" alt="profile">
-    <ul>
-        <li>naming Akan</li>
-        <li>agdshfdgfhg</li>
-        <li>dfghj</li>
-    </ul>
-
     <div class="row">
         <div class="col-lg-6">
+            <label>Username:</label>
+            <p>{{samSon.name}}</p>
+            <img src="{{samSon.avatar_url}}" alt="profile">
+            <ul>
+                <li>naming Akan</li>
+                <li>agdshfdgfhg</li>
+                <li>dfghj</li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
 
+            <button class="btn btn-secondary">Find</button>
             <app-pages-form></app-pages-form>
+
         </div>
     </div>

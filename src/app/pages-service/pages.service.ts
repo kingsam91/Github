@@ -11,5 +11,10 @@ const httpOptions = {
 })
 export class PagesService {
 
-  constructor() { }
+  constructor(private repos: HttpClient) { }
+
+  getGitacc(){
+    return this.repos.get("")
+  };
+
 }

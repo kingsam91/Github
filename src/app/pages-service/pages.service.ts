@@ -16,7 +16,7 @@ export class PagesService {
     return this.http.get(`https://api.github.com/users/kingsam91?access_token=9f59e16ae9c0b7ce339f0fa6077e0a3f89ab9d01`, httpOptions)
   };
   getPublicrepos(){
-    return this.http.get(`https://api.github.com/repositories/kingsam91?access_token=9f59e16ae9c0b7ce339f0fa6077e0a3f89ab9d01`, httpOptions)
+    return this.http.get(`https://api.github.com/user/repos?access_token=9f59e16ae9c0b7ce339f0fa6077e0a3f89ab9d01`, httpOptions)
   };
 
 }

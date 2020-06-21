@@ -4,12 +4,11 @@
             <label>Username:</label>
             <p>{{samSon.name}}</p>
             <img src="{{samSon.avatar_url}}" alt="profile">
-            <app-pages-repos></app-pages-repos>
-            <ul>
-                <li>naming Akan</li>
-                <li>agdshfdgfhg</li>
-                <li>dfghj</li>
+            <ul *ngFor="let item of nguThi; index as i;">
+                <li>{{item.name}}</li>
+                <li>{{item.git_url}}</li>
             </ul>
+            <app-pages-repos></app-pages-repos>
         </div>
         <div class="col-lg-6">
 

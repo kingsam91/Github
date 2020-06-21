@@ -5,7 +5,6 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +13,7 @@ export class PagesService {
   constructor(private repos: HttpClient) { }
 
   getGitacc(){
-    return this.repos.get("")
+    return this.repos.get("https://api.github.com", httpOptions)
   };
 
 }

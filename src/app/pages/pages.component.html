@@ -9,11 +9,10 @@
                 <li>{{item.name}}</li>
                 <li>{{item.git_url}}</li>
             </ul>
-            <app-pages-repos></app-pages-repos>
         </div>
         <div class="col-lg-6">
 
-            <button class="btn btn-secondary">Find</button>
+            <button class="btn btn-secondary" (click)='toggleDetails()'>Find</button>
             <app-pages-form></app-pages-form>
 
         </div>

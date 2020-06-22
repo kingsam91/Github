@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Page } from '../page';
 
 @Component({
   selector: 'app-pages-form',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesFormComponent implements OnInit {
 
+  search = new Page('');
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  searchPages(value: string) {
+    console.log("YES: ", value)
   }
 
 }

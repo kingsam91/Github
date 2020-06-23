@@ -1,14 +1,18 @@
-<p>pages-form works!</p>
 <div class="container-fluid">
     <h2 class="text-center">Search Github</h2>
     <hr>
-    <form (ngSubmit)='searchPages($event)' #pagesForm='ngForm'>
+    <form>
         <div class="form-group">
 
             <label for="name">Search</label>
-            <input type="text" name="search" required class="form-control" [(ngModel)]="search">
+            <input type="text" (keyup)="onKey($event)" class="form-control" name="search" required>
 
         </div>
-        <button type="submit" class="btn btn-success">Search</button>
+        <button type="submit" (click)="searchPages($event.value)" class="btn btn-success" id="sam">Search</button>
+
+        <div class="sam" *ngFor="let item of samSon; index as i;">
+            <div style="font-weight: bolder;">{{item.name | titlecase}}</div>
+            <div>{{item.git_url}}</div>
+        </div>
     </form>
 </div>

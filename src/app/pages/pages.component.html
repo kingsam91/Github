@@ -1,18 +1,15 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
-            <button class="btn btn-secondary">Kingsam91</button><br>
-            <label>Username:</label>
-            <p>{{samSon.name}}</p>
+            <label>Username: {{samSon.name | uppercase}}</label>
             <img src="{{samSon.avatar_url}}" alt="profile">
-            <ul *ngFor="let item of nguThi; index as i;">
-                <li>{{item.name}}</li>
-                <li>{{item.git_url}}</li>
-            </ul>
+            <div classs="ken" *ngFor="let item of nguThi; index as i;">
+                <div style="font-weight: bolder;">{{item.name}}</div>
+                <div>{{item.git_url}}</div>
+            </div>
         </div>
         <div class="col-lg-6">
 
-            <button class="btn btn-secondary" (click)='toggleDetails()'>Find</button>
             <app-pages-form></app-pages-form>
 
         </div>

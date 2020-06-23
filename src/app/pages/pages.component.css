@@ -1,3 +1,8 @@
+* {
+    background-color: teal;
+    color: seashell;
+}
+
 img {
     border: 1px solid grey;
     border-radius: 5px;

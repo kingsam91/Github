@@ -3,7 +3,7 @@
         <div class="col-lg-6">
             <label>Username: {{samSon.name | uppercase}}</label>
             <img src="{{samSon.avatar_url}}" alt="profile">
-            <div classs="ken" *ngFor="let item of nguThi; index as i;">
+            <div class="ken" *ngFor="let item of nguThi; index as i;">
                 <div style="font-weight: bolder;">{{item.name}}</div>
                 <div>{{item.git_url}}</div>
             </div>
